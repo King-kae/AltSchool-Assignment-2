@@ -5,9 +5,7 @@
     padding: 0;
 }
 body{
-    width: 90rem;
-    height: 52.5rem;
-
+    background: rgba(46, 196, 182, 0.04);
 }
 .flex{
     display: flex;
@@ -15,9 +13,10 @@ body{
 .container{
     width: 90rem;
     height: 52.5rem;
-    background: rgba(46, 196, 182, 0.04);
     padding: 5.06rem 8.75rem 5rem;
     gap: 7.5rem;
+    margin: auto;
+    justify-content: center;
 }
 
 /* The Left Side */
