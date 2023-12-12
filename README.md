@@ -1,4 +1,4 @@
-# AltSchool-Assignment-3
+# AltSchool-Assignment-2
 # This is a replica of a figma design(link to the design below) with the use of HTML and CSS only.
 
 
