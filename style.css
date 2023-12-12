@@ -1,0 +1,425 @@
+@import url('https://fonts.cdnfonts.com/css/brown');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 90rem;
+    height: 52.5rem;
+
+}
+.flex{
+    display: flex;
+}
+.container{
+    width: 90rem;
+    height: 52.5rem;
+    background: rgba(46, 196, 182, 0.04);
+    padding: 5.06rem 8.75rem 5rem;
+    gap: 7.5rem;
+}
+
+/* The Left Side */
+.leftside{
+    width: 28.75rem;
+    height: 17.1875rem;
+    margin-block-start: 7.75rem;
+    font-family: BoldBrown;
+
+}
+.logo{
+    width: 4.83331rem;
+    height: 5rem;
+    margin-block-end: 3.13rem;
+}
+.logo img:nth-child(1){
+    width: 4.83331rem;
+    height: 5rem;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
+}
+.smallview{
+    display: none;
+}
+.headtext{
+    color: var(--cl-black, #000B0A);
+    font-family: 'Brown', sans-serif;
+    width: 17.85rem;   
+    height: 3.125rem;                             
+
+    > h1{
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.125rem;
+        letter-spacing: -0.05rem;
+    
+    }
+}
+.maintext{
+    width: 27.11rem;
+    height: 4.6875rem;
+
+    > p{
+        color: rgba(115, 115, 115, 1);
+        font-family: 'Brown', sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5625rem;
+    }
+}
+
+
+
+/* The Right Side */
+.rightside{
+    width: 36.25rem;
+    height: 42.4375rem;
+    border-radius: 0.375rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    padding: 2.5rem;
+}
+
+.two-forms{
+    gap: 1.5rem;
+    margin: 0rem 0rem 1.88rem;
+}
+
+.fname, .lname, .gender, .dob, .weight, .height{
+    display: flex;
+    width: 14.875rem;
+    height: 4.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.62rem;
+}
+.fname label, .lname label, .gender label, .dob label, .weight label, .height label{
+    width: 9.9375rem;
+    font-family: 'Sofia Pro', sans-serif;
+    color: rgba(1, 28, 52, 1);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.00625rem;
+}
+.fname input{
+    width: 14.875rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: 1.5px solid rgba(46, 196, 182, 1);
+    padding: 0.87rem 3.25rem 0.87rem 1rem;
+}
+.fname input:focus, .fname input:hover{
+    border: 1.5px solid rgba(46, 196, 182, 1) !important;
+}
+
+.lname input, .weight input, .height input{
+    width: 14.875rem;
+    height: 3rem;
+    border-radius: 5px;
+    padding: 0.87rem 3.25rem 0.87rem 1rem;
+    border: 1.5px solid rgba(240, 240, 240, 1);
+}
+.dob input{
+    width: 14.875rem;
+    height: 3rem;
+    border-radius: 5px;
+    padding: 0.87rem 1rem 0.87rem 1rem;
+    border: 1.5px solid rgba(240, 240, 240, 1);
+}
+#genderValue{
+    width: 14.875rem;
+    height: 3rem;
+    border-radius: 5px;
+    padding: 0.87rem 3.25rem 0.87rem 1rem;
+    border: 1.5px solid rgba(240, 240, 240, 1);
+    color: var(--cl-grey, #737373);
+    font-family: 'Sofia Pro';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: 0.0125rem;
+}
+.dob, .gender, .password, .act-level{
+    position: relative;
+}
+.gender img, .dob img, .act-level img{
+    position: absolute;
+    top: 2.35rem;
+    right: 0.5rem;
+}
+.password img{
+    position: absolute;
+    top: 2.55rem;
+    right: 1rem;
+}
+.password input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.125rem;
+    padding: 0.87rem 3.25rem 0.87rem 1rem;
+}
+.password input{
+    border: 1px solid rgba(166, 166, 166, 1);
+}
+.fname input::placeholder, .lname input::placeholder{
+    color: rgba(1, 28, 52, 1);
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem; 
+    letter-spacing: 0.0125rem;
+}
+.dob input[type=date] {
+    color: transparent;
+}
+.gender input::placeholder, .dob input::placeholder, .weight input::placeholder, .height input::placeholder{
+    width: 10.625rem;
+    color: var(--cl-grey, #737373);
+    font-family: 'Sofia Pro';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: 0.0125rem;
+}
+.act-level select{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.125rem;
+    padding: 0.87rem 3.25rem 0.87rem 1rem;
+    color: var(--cl-grey, #737373);
+    font-family: 'Sofia Pro';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: 0.0125rem;
+    border: 1px solid rgba(240, 240, 240, 1);
+}
+.middle-form{
+    gap: 1.5rem;
+    margin-block-end: 1.88rem;
+}
+.last-form{
+    display: flex;
+    width: 31.25rem;
+    height: 4.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.62rem;
+    margin-block-end: 1.88rem !important;
+}
+.last-form label{
+    width: 20.8125rem;
+    color: var(--text-headings, #011C34);
+    font-family: 'Sofia Pro';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.00625rem;
+}
+.foot button{
+    width: 31.25rem;
+    height: 3rem;
+    border: none;
+    background-color: rgba(46, 196, 182, 1);
+    filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+    color: var(--basic-100, #FFF);
+    text-align: center;
+    font-family: 'Sofia Pro';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0125rem;
+    margin-block-end: 1rem;
+}
+.foot p{
+    width: 29.9375rem;
+    height: 1.5625rem;
+    color: #000;
+    font-family: 'Sofia Pro';
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    > a{
+        color: rgba(46, 196, 182, 1);
+        font-weight: 500;
+        padding: 0 0.2rem;
+    }
+}
+
+@media (max-width: 786px) {
+    body{
+        width: auto;
+        height: 80.875rem; 
+    }
+    .container{
+        width: 23.4375rem;
+        height: 80.875rem;
+        flex-direction: column;
+        padding: 0;
+        gap: 0rem;
+        justify-content: center;
+        align-items: center;
+        margin:  auto;
+    }
+    .flex{
+        display: flex !important;
+    }
+    .leftside{
+        margin: 0 1.5rem 2.5rem;
+        margin-block-start: 0rem;
+        width: 20.4375rem;
+        height:auto;
+    }
+    .logo{
+        margin-block-end: 2.5rem;
+        height: 2.5rem;
+    }
+    .largeview{
+        display: none !important;
+    }
+    .logo img:nth-child(2){
+        height: 2.5rem;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
+    }
+    .smallview{
+        display: block;
+    }
+    .headtext{
+        width: 20.4375rem;
+        height: 34px;
+        margin-block-end: 0.75rem;
+    }
+    .headtext h1{
+        color: var(--cl-black, #000B0A);
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.05rem;
+    }
+    .maintext{
+        width: 20.4375rem;
+        height: 3.125rem;
+    }
+    .maintext p:nth-child(2){
+        color: var(--cl-grey, #737373);
+        font-family: 'Sofia Pro';
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5625rem; /* 156.25% */
+    }
+    .rightside{
+        width: 20.4375rem;
+        height: 54.375rem;
+        border-radius: 0.375rem;
+        background: #FFF;
+        padding: 1.5rem 1rem 1.87rem;
+        margin-block-end: 1.5rem;
+        box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    }
+    .two-forms, .middle-form{
+        flex-direction: column;
+        margin: 0 0 1.5rem;
+    }
+    .fname input{
+        width: 100%;
+    }
+    .lname input, .dob input, .weight input, .height input{
+        width: 100%;
+        height: 3rem;
+        border-radius: 5px;
+        padding: 0.87rem 3.25rem 0.87rem 1rem;
+        border: 1.5px solid rgba(240, 240, 240, 1);
+    }
+    .dob input{
+        padding-inline-end: 1rem !important;
+    }
+    #genderValue{
+        width: 100%;
+        height: 3rem;
+        border-radius: 5px;
+        padding: 0.87rem 3.25rem 0.87rem 1rem;
+        border: 1.5px solid rgba(240, 240, 240, 1);
+    }
+
+    .fname, .lname, .gender, .dob, .weight, .height{
+        display: flex;
+        width: 100%;
+        height: 4.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.62rem;
+    }
+    .last-form{
+        display: flex;
+        width: 100%;
+        height: 4.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.62rem;
+    }
+    .act-level{
+        margin-block-end: 1.12rem !important;
+
+    }
+    .password{
+        margin-block-end: 1.88rem !important;
+    }
+    .act-level select{
+        border: 1px solid rgba(240, 240, 240, 1);
+    }
+    .password input{
+        border: 1px solid rgba(166, 166, 166, 1);
+    }
+    .act-level select, .password input{
+        width: 100%;
+        height: 3rem;
+        border-radius: 0.125rem;
+        padding: 0.87rem 3.25rem 0.87rem 1rem;
+    }
+    .foot button{
+        width: 100%;
+        height: 3rem;
+       
+    }
+    .base{
+        width: 19.75rem;
+        height: 3.125rem;
+        padding: 0 1rem;
+    }
+    .base p{
+        color: #000;
+        font-family: 'Sofia Pro';
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5625rem;
+        margin: 0 auto;
+
+        > a{
+            color: rgba(46, 196, 182, 1);
+            font-weight: 500;
+            padding: 0 0.2rem;
+    }
+    }
+}
