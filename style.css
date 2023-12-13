@@ -7,7 +7,6 @@
 body{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: auto;
     background: rgba(46, 196, 182, 0.04);
 }
@@ -17,7 +16,7 @@ body{
 .container{
     width: 90rem;
     height: 52.5rem;
-    padding: 5.06rem 8.75rem 5rem;
+    padding: 5.06rem 8.75rem 5rem !important;
     gap: 7.5rem;
     margin: auto;
     justify-content: center;
@@ -116,7 +115,7 @@ body{
     border-radius: 5px;
     border: 1.5px solid rgba(46, 196, 182, 1);
     padding: 0.87rem 3.25rem 0.87rem 1rem;
-    background-color: inherit;
+    background: rgba(255, 255, 255, 1);
 }
 .fname input:focus, .fname input:hover{
     border: 1.5px solid rgba(46, 196, 182, 1) !important;
@@ -128,7 +127,7 @@ body{
     border-radius: 5px;
     padding: 0.87rem 3.25rem 0.87rem 1rem;
     border: 1.5px solid rgba(240, 240, 240, 1);
-    background-color: inherit;
+    background: rgba(255, 255, 255, 1);
 }
 .dob input{
     width: 14.875rem;
@@ -136,7 +135,7 @@ body{
     border-radius: 5px;
     padding: 0.87rem 1rem 0.87rem 1rem;
     border: 1.5px solid rgba(240, 240, 240, 1);
-    background-color: inherit;
+    background: rgba(255, 255, 255, 1);
 }
 #genderValue{
     width: 14.875rem;
@@ -151,7 +150,7 @@ body{
     font-weight: 300;
     line-height: 1.25rem;
     letter-spacing: 0.0125rem;
-    background-color: inherit;
+    background: rgba(255, 255, 255, 1);
 }
 .dob, .gender, .password, .act-level{
     position: relative;
