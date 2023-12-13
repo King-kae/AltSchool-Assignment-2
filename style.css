@@ -17,14 +17,15 @@ body{
     gap: 7.5rem;
     margin: auto;
     justify-content: center;
+    align-items: center;
 }
 
 /* The Left Side */
 .leftside{
     width: 28.75rem;
     height: 17.1875rem;
-    margin-block-start: 7.75rem;
-    font-family: BoldBrown;
+    margin-block-end: 7.7525rem;
+    font-family: 'BoldBrown';
 
 }
 .logo{
