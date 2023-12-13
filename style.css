@@ -5,6 +5,10 @@
     padding: 0;
 }
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     background: rgba(46, 196, 182, 0.04);
 }
 .flex{
